@@ -42,9 +42,4 @@ if __name__ == '__main__':
     parser.add_argument('-num1', dest='first', type=int, required=False)
     parser.add_argument('-num2', dest='second', type=int, required=False)
     args, sys.argv[1:] = parser.parse_known_args(sys.argv[1:])
-    # data = {
-    #     'b': args.smaller
-    # }
-    # if args.bigger:
-    #     data['a'] = args.bigger
     main(num1=args.first, num2=args.second)
