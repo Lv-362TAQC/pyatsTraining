@@ -7,6 +7,7 @@ parameters = {
     'num2': 0
 }
 
+
 def add(num1, num2):
     return num1 + num2
 
@@ -19,22 +20,19 @@ class SmokeTest(Testcase):
 
     @test
     def test_add(self, num1, num2):
-        #try:
-         #   assert add(num1, num2) >= 0
-            assert add(num1, num2) == num1 + num2
-        #except AssertionError:
-         #   self.skipped('skipped')
+        # try:
+        #   assert add(num1, num2) >= 0
+        assert add(num1, num2) == num1 + num2
 
+    # except AssertionError:
+    #   self.skipped('skipped')
 
     @test
     def test_divide(self, num1, num2):
         try:
-            assert divide(num1, num2) == num1/num2
+            assert divide(num1, num2) == num1 / num2
         except ArithmeticError:
             self.passx('passx')
-
-
-
 
 
 if __name__ == '__main__':
