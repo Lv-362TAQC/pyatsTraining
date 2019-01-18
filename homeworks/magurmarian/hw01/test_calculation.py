@@ -5,11 +5,6 @@ import sys
 from pyats.aetest import Testcase, test, main
 from calculation import add, divide
 
-parameters = {
-    'num1': 3,
-    'num2': 0
-}
-
 
 class SmokeTest(Testcase):
     """class for smoke testing add and devide functions"""
