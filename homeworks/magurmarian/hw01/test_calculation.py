@@ -20,8 +20,8 @@ class SmokeTest(Testcase):
             self.skipped('Result of add is less then 0')
 
     @test
-    def test_devide(self, steps, num1, num2):
-        """method for testing devide function"""
+    def test_divide(self, steps, num1, num2):
+        """method for testing divide function"""
         with steps.start('Divide') as step:
             try:
                 assert divide(num1, num2) > 0
@@ -40,4 +40,3 @@ if __name__ == '__main__':
 
     args, sys.argv[1:] = parser.parse_known_args(sys.argv[1:])
     main(num1=args.num1, num2=args.num2)
-
