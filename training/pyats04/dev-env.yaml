@@ -1,0 +1,12 @@
+devices:
+  main:
+    alias: master
+    os: 'linux'
+    type: 'linux'
+    connections:
+      linux:
+        protocol: ssh
+        ip: 192.168.242.55
+    custom:
+      size: 100
+      tags: [a,b]
