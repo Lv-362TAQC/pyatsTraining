@@ -1,0 +1,18 @@
+devices:
+  vm:
+    os: 'linux'
+    type: "%{self.os}"
+    connections:
+      defaults:
+        via: main
+        alias: default
+      main:
+        username: pyast
+        protocol: ssh
+        ip: 192.168.242.44
+        password: pyastpyast
+      test:
+        username: pyast
+        protocol: ssh
+        ip: 192.168.242.44
+        password: pyastpyast
