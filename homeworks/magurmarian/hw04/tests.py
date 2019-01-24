@@ -24,8 +24,4 @@ class Test(Testcase):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> 4a8a25e... implement hw3 & hw4
